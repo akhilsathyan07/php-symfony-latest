@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfony Home{% endblock %}
+
+{% block body %}
+    <h2>Welcome to Your Symfony Application</h2>
+
+    <ul>
+        <li><strong>Symfony Version:</strong> {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</li>
+        <li><strong>Environment:</strong> {{ app.environment }}</li>
+        <li><strong>Debug Mode:</strong> {{ app.debug ? 'Enabled' : 'Disabled' }}</li>
+        <li><strong>Project Directory:</strong> {{ app.project_dir }}</li>
+    </ul>
+
+    <p>Need help? Check out the <a href="https://symfony.com/doc/current/" target="_blank">Symfony Documentation</a>.</p>
+{% endblock %}
+
